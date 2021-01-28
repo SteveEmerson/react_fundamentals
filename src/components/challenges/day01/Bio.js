@@ -1,3 +1,4 @@
+import React from 'react';
 const Bio = () => {
   return(
     /* The contents must have one parent but it can be just a "dummy" element as a container*/

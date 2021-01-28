@@ -1,22 +1,24 @@
 import logo from './logo.svg';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
-import Header from './components/Header';
-import Bio from './components/challenges/day01/Bio';
-import Footer from './components/challenges/day01/Footer'
-import Home from './components/challenges/day01/Home'
+import Header from './components/site/Header';
+//import Bio from './components/challenges/day01/Bio';
+import Footer from './components/site/Footer'
+//import Home from './components/site/Home'
+import Sidebar from './components/site/Sidebar';
+import {
+  BrowserRouter as Router,
+} from 'react-router-dom';
 
-function App() {
-  // This is the root component
-  const name = "Steve";
+const App = () => {
   return (
-    <div className="App">
-      {/* Comments inside here need to be in {} and use block comment */}
-      <Home/>
-      <h1>Welcome to React {name}</h1>
-      <h2>We just modified the root app component</h2>
+    <div>
       <Header />
-      <Bio />
-      <Footer/>
+      <Router>
+        <Sidebar />
+      </Router>
+      <Footer />
     </div>
   );
 }
