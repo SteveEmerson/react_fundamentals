@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.card {
+  display: flex;
+  flex-direction: col;
+  align-content: center;
+  justify-content: center;
+  width: 30vw;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+}
+
+#ghib-thumb {
+  width: 100%;
+}

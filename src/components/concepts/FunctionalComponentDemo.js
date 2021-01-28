@@ -1,5 +1,6 @@
 import React from 'react';
-import HelloWorld from './HelloWorld'; 
+import HelloWorld from './HelloWorld';
+import HelloworldFA from './HelloWorldFatArrow'
 
 const FunctionalComponentDemo = () => {
   return (
@@ -19,7 +20,7 @@ const FunctionalComponentDemo = () => {
         <dd>Must return a single element, but this element may have nested elements inside.</dd>
       </dl>
       <h1>Functional Syntax vs Fat Arrow Function</h1>
-      <HelloWorld />
+      <div className="cards"><HelloWorld /><HelloworldFA /></div>
     </div>
   );
 };
