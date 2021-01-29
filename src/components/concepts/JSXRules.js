@@ -16,6 +16,7 @@ const JSXRules = () => {
         <hr/>
       </div>
       <NormalComponent />
+      <CreateElementComponent />
     </div>
   );
 };
@@ -29,5 +30,30 @@ const NormalComponent = () => {
     </div>
   );
 };
+
+const CreateElementComponent = () => {
+  return /*#__PURE__*/ React.createElement(
+    "div",
+    {
+      style: {
+        border: "2px solid black"
+      }
+    },
+    /*#__PURE__*/ React.createElement(
+      "h1",
+      null,
+      "Create Element Component"
+    ),
+    /*#__PURE__*/ React.createElement(
+      "p",
+      null,
+      "This was constructed with vanilla JS in the return."
+    ),
+    /*#__PURE__*/ React.createElement("img", {
+      src: "https://pbs.twimg.com/media/DOzL82mXkAA0zFs.jpg"
+    })
+  );
+};
+
 
 export default JSXRules;
