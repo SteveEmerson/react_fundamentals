@@ -31,6 +31,7 @@ function StateExample() {
         style={{width:'100px', height:'100px'}} 
         src="https://upload.wikimedia.org/wikipedia/commons/1/13/Facebook_like_thumb.png" 
         onClick={e => setLikeNum(likeNum + 1)}
+        alt="Facebook like thumb"
       />
       <span>{likeNum}</span>
       <br/>

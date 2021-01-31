@@ -3,15 +3,15 @@ import PropTypes from 'prop-types';
 
 const PropsDemo = () => {
   
-  const [color, setColor] = useState('white');
-  const [backgroundColor, setBackgroundColor] = useState('purple');
-  const [borderRadius, setBorderRadius] = useState('5px');
-  const [borderStyle, setBorderStyle] = useState('dashed');
-  const [display, setDisplay] = useState('inline-block');
-  const [width, setWidth] = useState('350px');
-  const [textAlign, setTextAlign] = useState('center');
+  const [color, setColor] = useState('');
+  const [backgroundColor, setBackgroundColor] = useState('');
+  const [borderRadius, setBorderRadius] = useState('');
+  const [borderStyle, setBorderStyle] = useState('');
+  const [display, setDisplay] = useState('');
+  const [width, setWidth] = useState('');
+  const [textAlign, setTextAlign] = useState('');
 
-  let styles= {
+  const styles = {
     color: color,
     backgroundColor: backgroundColor,
     borderRadius: borderRadius,
@@ -19,7 +19,8 @@ const PropsDemo = () => {
     display: display,
     width: width,
     textAlign: textAlign
-  }
+  };
+
 
   const toggleColor = () => {
     color==='white' ? setColor('purple') : setColor('white');
@@ -37,11 +38,24 @@ const PropsDemo = () => {
     borderStyle==='dashed' ? setBorderStyle('solid') : setBorderStyle('dashed');
   }
 
-
+  const setDivStyle = () => {
+    setColor('white');
+    setBackgroundColor('purple');
+    setBorderRadius('5px');
+    setBorderStyle('dashed');
+    setDisplay('inline-block');
+    setWidth('350px');
+    setTextAlign('center');
+    
+  };
 
   return(
     <div className="main">
       <div className="mainDiv">
+        <h4>Props Demo</h4>
+        <label>Press here to set the style of the elements below.</label>
+        <StyleButton function={setDivStyle}/>
+        <br/>
         <div style={styles}>
           <FunctionalComponent />
           <FunctionalComponent 
@@ -67,6 +81,13 @@ const PropsDemo = () => {
   );
 };
 
+const StyleButton = (props) => {
+  return (
+    <div>
+      <button onClick={props.function}>Set Style</button>
+    </div>
+  )
+}
 const FunctionalComponent = (props) => {
   return(
     <div>

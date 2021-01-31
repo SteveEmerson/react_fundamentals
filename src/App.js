@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
@@ -7,7 +7,7 @@ import Header from './components/site/Header';
 import Footer from './components/site/Footer'
 //import Home from './components/site/Home'
 import Sidebar from './components/site/Sidebar';
-import FunctionalComponentDemo from './components/concepts/FunctionalComponentDemo';
+//import FunctionalComponentDemo from './components/concepts/FunctionalComponentDemo';
 import {
   BrowserRouter as Router,
 } from 'react-router-dom';

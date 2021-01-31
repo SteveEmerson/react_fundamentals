@@ -4,7 +4,7 @@ const JSXRules = () => {
   return (
     <div className="main">
       <div className="mainDiv">
-        <h1 className="section-title"></h1>
+        <h1 className="section-title">JSX</h1>
         <dl>
           <dt>Resembles HTML</dt>
           <dd>It's not. It's actually closer to JavaScript.</dd>
@@ -26,7 +26,8 @@ const NormalComponent = () => {
     <div style={{border:'2px solid black'}}>
       <h1>Normal Functional Component</h1>
       <p>This was constructed with JSX in the return.</p>
-      <img src="https://pbs.twimg.com/media/DOzL82mXkAA0zFs.jpg" />
+      <img src="https://pbs.twimg.com/media/DOzL82mXkAA0zFs.jpg" 
+      alt="JSXlogo"/>
     </div>
   );
 };
