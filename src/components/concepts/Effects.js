@@ -53,4 +53,5 @@ const SampleEffect = () => {
     </div>
   );
 };
+
 export default Effects;
